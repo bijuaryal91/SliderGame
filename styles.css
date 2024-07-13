@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ebecf0;
+}
+.puzzle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 10px #babebc;
+}
+.puzzle {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cell:active {
+    transform: translateZ(-10px);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+.empty {
+    background-color: #ecf0f1;
+    cursor: default;
+}
+#shuffle-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+#shuffle-button:active {
+    transform: translateY(2px);
+}
+#win-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: green;
+}
+.hidden {
+    visibility: hidden;
+}

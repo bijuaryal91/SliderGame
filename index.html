@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="puzzle-container">
+        <div class="puzzle">
+            <div class="cell" data-index="0">1</div>
+            <div class="cell" data-index="1">2</div>
+            <div class="cell" data-index="2">3</div>
+            <div class="cell" data-index="3">4</div>
+            <div class="cell" data-index="4">5</div>
+            <div class="cell" data-index="5">6</div>
+            <div class="cell" data-index="6">7</div>
+            <div class="cell" data-index="7">8</div>
+            <div class="cell empty" data-index="8"></div>
+        </div>
+        <button id="shuffle-button">Shuffle</button>
+    </div>
+    <div id="win-message" class="hidden">Congratulations! You solved the puzzle!</div>
+    <script src="script.js"></script>
+</body>
+</html>
